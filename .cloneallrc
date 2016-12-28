@@ -1,0 +1,4 @@
+[cloneall]
+github_user = mgedmin
+pattern = *.vim
+
