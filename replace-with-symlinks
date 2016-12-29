@@ -1,0 +1,16 @@
+#!/bin/bash
+bundles=$HOME/.vim/bundle
+for repo in *; do
+    if [ -L "$repo" ]; then
+        continue
+    fi
+    if ! [ -d "$repo" ] && [ -d "$repo/.git" ]; then
+        continue
+    fi
+    if ! [ -d "$bundles/$repo" ]; then
+        continue
+    fi
+    mv "$repo" "$repo.BAK" || exit 1
+    echo "ln -sr $bundles/$repo $repo"
+    ln -sr "$bundles/$repo" "$repo"
+done
