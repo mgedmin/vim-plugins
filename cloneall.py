@@ -1,1 +1,0 @@
-../cloneall/cloneall.py

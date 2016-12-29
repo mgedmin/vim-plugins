@@ -1,4 +1,4 @@
-[cloneall]
+[ghcloneall]
 github_user = mgedmin
 pattern = *.vim
 
