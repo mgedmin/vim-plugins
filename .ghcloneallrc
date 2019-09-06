@@ -1,4 +1,5 @@
 [ghcloneall]
 github_user = mgedmin
 pattern = *.vim
-
+include_forks = True
+# python_open_module.vim and pythonhelper.vim are forks!
